@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="calculator">
+      <input id="display" type="text" readonly />
+      <div class="button-row">
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('7')">7</button>
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('8')">8</button>
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('9')">9</button>
+        <button class="button" style="background-color: #FF9800;" onclick="clickButton('/')">/</button>
+      </div>
+      <div class="button-row">
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('4')">4</button>
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('5')">5</button>
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('6')">6</button>
+        <button class="button" style="background-color: #FF9800;" onclick="clickButton('*')"> *</button>
+      </div>
+      <div class="button-row">
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('1')">1</button>
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('2')">2</button>
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('3')">3</button>
+        <button class="button" style="background-color: #FF9800;" onclick="clickButton('-')"> -</button>
+      </div>
+      <div class="button-row">
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('0')">0</button>
+        <button class="button" style="background-color: #4CAF50;" onclick="clickButton('.')">.</button>
+        <button class="button" style="background-color: #FF9800;" onclick="clickButton('=')">=</button>
+        <button class="button" style="background-color: #FF9800;" onclick="clickButton('+')">+</button>
+      </div>
+      <div class="button-row">
+        <button class="button clear-button" style="background-color: #FF0000;" onclick="clearDisplay()">C</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
